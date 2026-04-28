@@ -1,36 +1,71 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# .upptimerc.yml
+owner: fortolabs
+repo: fortolabs-status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
-    check: "tcp-ping"
-    ipv6: true
+  # WEB GROUP
+  # - name: Login Interface
+  #   url: https://auth.youridp.com
+  #   group: Web Services
+  # - name: Dashboard
+  #   url: https://lumodoc.fortolabs.com
+  #   group: Web Services
+
+  # API GROUP
+  # - name: Authentication API
+  #   url: https://api.youridp.com/v1/health
+  #   group: API Services
+  - name: User API
+    url: https://lumodoc.fortolabs.com/api/v1/healthz
+    group: API Services
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.fortolabs.com
+  name: LumoDoc Status
+  introTitle: "All Systems Operational"
+  introMessage: "Real-time status of the **LumoDoc** authentication platform. We monitor our global API and Web interfaces."
   navbar:
-    - title: Status
-      href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - title: Back to Product
+      href: https://lumodoc.fortolabs.com
+    - title: Documentation
+      href: https://fortolabs.com/lumodoc-how-it-works/
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+  # CUSTOM CSS
+  customCSS: |
+    :root {
+      --primary-color: #0061ff; /* Dropbox Blue */
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #ffffff;
+    }
+    header {
+      border-bottom: 1px solid #e5e5e5;
+      padding: 2rem 0;
+    }
+    .status-header {
+      border-radius: 4px;
+      padding: 30px;
+      margin-top: 20px;
+      background-color: #0061ff !important;
+      color: white !important;
+      font-weight: 700;
+      text-align: center;
+    }
+    /* Grouping style */
+    .category-name {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #1b2733;
+      margin-top: 50px;
+      border-bottom: 2px solid #f2f2f2;
+      padding-bottom: 10px;
+    }
+    .site-row {
+      border-bottom: 1px solid #f2f2f2;
+      padding: 20px 0;
+    }
+    .site-name {
+      font-weight: 500;
+      color: #1b2733;
+    }
