@@ -20,6 +20,7 @@ sites:
     group: API Services
 
 status-website:
+  publish: true
   cname: status.fortolabs.com
   name: LumoDoc Status
   introTitle: "All Systems Operational"
