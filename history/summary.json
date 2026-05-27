@@ -4,17 +4,17 @@
     "url": "https://lumodoc.fortolabs.com/api/v1/healthz",
     "icon": "https://icons.duckduckgo.com/ip3/lumodoc.fortolabs.com.ico",
     "slug": "user-api",
-    "status": "down",
+    "status": "up",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 0,
-    "timeDay": 0,
-    "timeWeek": 0,
-    "timeMonth": 0,
-    "timeYear": 0,
+    "time": 461,
+    "timeDay": 461,
+    "timeWeek": 461,
+    "timeMonth": 461,
+    "timeYear": 461,
     "dailyMinutesDown": {}
   }
 ]
